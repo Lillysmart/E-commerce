@@ -9,6 +9,13 @@ const Navbar = () => {
         <img src={logo} alt="Logo" /> {/* Use the imported image variable */}
         <p>Shopper</p>
       </div>
+     <ul className='nav-menu' >
+        <li>Shop</li>
+        <li>Men</li>
+        <li>Women</li>
+        <li>Kids</li>
+
+     </ul>
     </div>
   );
 };
