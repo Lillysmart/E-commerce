@@ -1,10 +1,11 @@
 
 import React from 'react';
+import "./navbar.css"
 
 const NavBar = () => {
   return (
     <div>
-      {/* Your component code here */}
+    <p>Hi there</p>
     </div>
   );
 };
