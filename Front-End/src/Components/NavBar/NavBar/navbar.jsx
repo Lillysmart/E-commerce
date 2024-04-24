@@ -4,7 +4,7 @@ import CartIcon from '../../../../Assets/cart_icon.png';
 import "./navbar.css"
 
 const Navbar = () => {
-  const [menu , setMenu]= useState("shop")
+  const [menu , setMenu]= useState("Shop")
   
   return (
     
@@ -15,9 +15,9 @@ const Navbar = () => {
       </div>
       <ul className="nav-menu">
         <li onClick={()=>{setMenu("Shop")}}> Shop{menu ==="Shop"? <hr/> :<></> } </li>
-        <li onClick={()=>{setMenu("Mens")}} >Men</li>
-        <li onClick={()=>{setMenu("Women")}}>Women</li>
-        <li onClick={()=>{setMenu("Kids")}}>Kids</li>
+        <li onClick={()=>{setMenu("Mens")}} >Men{menu ==="Mens"? <hr/> :<></> } </li>
+        <li onClick={()=>{setMenu("Women")}}>Women {menu ==="Women"? <hr/> :<></> } </li>
+        <li onClick={()=>{setMenu("Kids")}}>Kids {menu ==="Kids"? <hr/> :<></> }</li>
       </ul>
       <div className="nav-login-cart">
         <button>Login</button>
