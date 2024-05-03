@@ -15,10 +15,10 @@ const Navbar = () => {
         <p>Shopper</p>
       </div>
       <ul className="nav-menu">
-        <li onClick={()=>{setMenu("Shop")}}> <Link  to='/'>Shop </Link> {menu ==="Shop"? <hr/> :<></> } </li>
-        <li onClick={()=>{setMenu("Mens")}} ><Link to='/mens'>Men</Link>{menu ==="Mens"? <hr/> :<></> } </li>
-        <li onClick={()=>{setMenu("Women")}}> <Link to='/women'>Women</Link> {menu ==="Women"? <hr/> :<></> } </li>
-        <li onClick={()=>{setMenu("Kids")}}> <Link to='kids'>Kids</Link> {menu ==="Kids"? <hr/> :<></> }</li>
+        <li onClick={()=>{setMenu("Shop")}}> <Link  to='/'   style={{ textDecoration: 'none', color: 'inherit' }}>Shop </Link> {menu ==="Shop"? <hr/> :<></> } </li>
+        <li onClick={()=>{setMenu("Mens")}} ><Link to='/mens'  style={{ textDecoration: 'none', color: 'inherit' }}>Men</Link>{menu ==="Mens"? <hr/> :<></> } </li>
+        <li onClick={()=>{setMenu("Women")}}> <Link to='/women'  style={{ textDecoration: 'none', color: 'inherit' }}>Women</Link> {menu ==="Women"? <hr/> :<></> } </li>
+        <li onClick={()=>{setMenu("Kids")}}> <Link to='kids'  style={{ textDecoration: 'none', color: 'inherit' }}>Kids</Link> {menu ==="Kids"? <hr/> :<></> }</li>
       </ul>
       <div className="nav-login-cart">
        <Link to='/login'><button>Login</button></Link> 
